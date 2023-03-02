@@ -4,16 +4,18 @@
 
   <head>
       <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1">
   <meta name="description" content="A well made and handcrafted Bootstrap 5 template">
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
-  <meta name="author" content="Holger Koenemann">
-  <meta name="generator" content="Eleventy v2.0.0">
-  <meta name="HandheldFriendly" content="true">
+  
   <title>Jafet Portfolio V1</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <link rel="stylesheet" href="css/theme.min.css">
   <script src="https://kit.fontawesome.com/f3f7f45ec1.js" crossorigin="anonymous"></script>
 
@@ -60,12 +62,27 @@
        url('fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-</style>
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: #111111;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb{
+  background: #202020;
+  border-radius: 50px;
+}
+
+  </style>
 
 
   </head>
 
+  
+
   <body class="bg-black text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
+
 
     <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top px-vw-5" tabindex="0">
   <div class="container">
@@ -75,7 +92,7 @@
     <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"/>
     <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"/>
   </svg> -->
-  <span class="ms-md-1 mt-1 fw-bolder me-md-5">{J}</span>
+  <span class="ms-md-1 mt-1 fw-bolder me-md-5 animate__animated animate__jackInTheBox">{J}</span>
 
 </a>
 
@@ -107,8 +124,10 @@
   <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center">
   <div class="row d-flex align-items-center justify-content-center py-vh-5">
     <div class="col-12 col-xl-10">
-      <span class="h5 text-secondary fw-lighter">Hola👋, Soy</span>
-      <h1 class="display-huge mt-3 mb-3 lh-1">Jafet Vazquez</h1>
+      <br>
+      <span class="h5 text-secondary fw-lighter">Hola <span class="h5 text-secondary fw-lighter animate__animated animate__jello">👋,</span> Soy</span>
+      <h1 class="display-huge mt-3 mb-3 animate__animated animate__tada">Jafet Vazquez Olvera</h1>
+      
     </div>
 
     <div class="col-12 col-xl-8">
@@ -119,7 +138,9 @@
 
     <div class="col-12 text-center">
 
-      <a href="https://google.com.mx" target="_blank" aria-label="Download this template" class="btn btn-outline-light">
+    <br>
+
+      <a href="https://google.com.mx" target="_blank" aria-label="Download this template" class="btn btn-outline-light animate__animated animate__fadeInDown">
         <small>Descargar CV</small>
         
         <i class="fas fa-download"></i>
@@ -134,12 +155,16 @@
         <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
         </svg>
       </a> -->
-      <a href="https://google.com.mx" target="_blank" aria-label="Download this template" class="btn btn-outline-light">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jetvax.jv@gmail.com" target="_blank" aria-label="Download this template" class="btn btn-outline-light animate__animated animate__fadeInUp">
         <small>Contáctame!!!</small>
 
         <i class="fa-solid fa-envelope"></i>
          
       </a>
+
+      <br>
+      <br>
+        
 
     </div>
 
@@ -153,7 +178,7 @@
     <div class="position-absolute w-100 h-50 bg-dark bottom-0 start-0"></div>
     <div class="row d-flex align-items-center position-relative justify-content-center px-0 g-5">
       <div class="col-12 col-lg-6">
-        <img src="img/webp/abstract18.webp" width="2280" height="1732" alt="abstract image" class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up">
+        <img src="img/webp/abstract18.webp" width="auto" height="1732" alt="abstract image" class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up">
       </div>
       <div class="col-12 col-md-6 col-lg-3">
         <img src="img/webp/abstract6.webp" width="1116" height="1578" alt="abstract image" class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up" data-aos-duration="2000">
@@ -191,7 +216,7 @@
   </div>
 </div>
 
-<div class="bg-black py-vh-3">
+<!--<div class="bg-black py-vh-3">
   <div class="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
 
   <div class="row gx-5">
@@ -256,7 +281,6 @@
 
       <div class="col-12 col-lg-7">
         <img class="img-fluid rounded-5 mb-n5 shadow" src="img/webp/person9.webp" width="512" height="512" alt="a nice person" loading="lazy" data-aos="zoom-in-right">
-        <img class="img-fluid rounded-5 ms-5 mb-n5 shadow" src="img/webp/person11.webp" width="512" height="512" alt="another nice person" loading="lazy" data-aos="zoom-in-up">
       </div>
       <div class="col-12 col-lg-5 bg-dark rounded-5 py-5" data-aos="fade">
         <span class="h5 text-secondary fw-lighter">Do you like faces?</span>
@@ -532,7 +556,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
   <div class="container text-center small py-vh-2 border-top border-dark">Made by
     <a href="https://templatedeck.com" class="link-fancy link-fancy-light" target="_blank">templatedeck.com</a>
   </div>
-</footer>
+</footer>-->
 
 
 
