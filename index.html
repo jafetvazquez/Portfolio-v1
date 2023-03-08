@@ -29,7 +29,7 @@
     />
     <link rel="icon" type="image/png" sizes="96x96" href="img/jV2.png" />
 
-    <title>Jafet Portfolio V1</title>
+    <title>Jafet Vazquez - Web Developer</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -592,7 +592,7 @@
 
     <footer class="bg-black border-top border-dark">
       <div class="container py-vh-4 text-secondary fw-lighter">
-        
+
       </div>
       <div class="container text-left small py-vh-2 border-top border-dark">
         &#169; Jafet Vazquez 2023 &nbsp;
@@ -621,7 +621,22 @@
           target="_blank"
           ><i class="fab fa-whatsapp"></i></a
         >
+
+        &nbsp;
+
+        <div class="text-right small" id="copiador">
+          <abbr title="Copiar!!!">
+          <a
+          class="link-fancy link-fancy-light"
+          target="_blank"
+          id="enlace"
+          style="cursor: pointer;"
+          >jetvax.jv@gmail.com</a
+          >
+          </abbr>
+        </div>
       </div>
+
     </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -652,6 +667,26 @@
 
         console.log(scrollpos);
       });
+
+
+      var boton = document.getElementById("copiador");
+      boton.addEventListener("click", copiarAlPortapapeles, false);
+      function copiarAlPortapapeles() {
+        var enlace = document.getElementById("enlace");
+        var inputFalso = document.createElement("input");
+        inputFalso.setAttribute("value", enlace.innerHTML);
+        document.body.appendChild(inputFalso);
+        inputFalso.select();
+        document.execCommand("copy");
+        document.body.removeChild(inputFalso);
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Your work has been saved',
+          showConfirmButton: false,
+          timer: 1500
+        })
+      }
     </script>
   </body>
 </html>
