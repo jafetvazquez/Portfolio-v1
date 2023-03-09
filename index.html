@@ -35,6 +35,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="css/theme.min.css" />
+
+    <link rel="stylesheet" href="node_modules/@sweetalert2/theme-dark/dark.css">
+
+    <script src="node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+
     <script
       src="https://kit.fontawesome.com/f3f7f45ec1.js"
       crossorigin="anonymous"
@@ -671,6 +676,7 @@
 
       var boton = document.getElementById("copiador");
       boton.addEventListener("click", copiarAlPortapapeles, false);
+
       function copiarAlPortapapeles() {
         var enlace = document.getElementById("enlace");
         var inputFalso = document.createElement("input");
@@ -679,10 +685,14 @@
         inputFalso.select();
         document.execCommand("copy");
         document.body.removeChild(inputFalso);
+        // alert("Copiado");
+      }
+
+      if(copiarAlPortapapeles() == true){
         Swal.fire({
           position: 'top-end',
           icon: 'success',
-          title: 'Your work has been saved',
+          title: 'Email copiado!!!',
           showConfirmButton: false,
           timer: 1500
         })
