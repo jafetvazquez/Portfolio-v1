@@ -8,7 +8,7 @@
     />
     <meta
       name="description"
-      content="A well made and handcrafted Bootstrap 5 template"
+      content="Jafet's portfolio"
     />
     <link
       rel="apple-touch-icon"
@@ -160,7 +160,7 @@
 
             <div class="col-12 col-xl-8">
               <p class="lead text-secondary">
-                Desarrollador web jr.
+                Desarrollador web
                 <br />
                 Apasionado por el desarrollo Frontend
               </p>
@@ -170,7 +170,7 @@
               <br />
 
               <a
-                href="https://drive.google.com/file/d/1a6Eog4yhDYc54z0wtQr_HTf6BKhd8Xnb/view?usp=share_link"
+                href="https://drive.google.com/file/d/1HOhQddsftFCnYZV92yh61rSgMZEJWXkg/view?usp=sharing"
                 style="cursor: pointer;"
                 target="_blank"
                 aria-label="CV"
@@ -184,16 +184,17 @@
               <br />
               <br />
 
+              <abbr title="Copiar email">
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=jetvax.jv@gmail.com"
-                target="_blank"
+                onclick="alertCopiar()"
                 aria-label="Email"
                 class="btn btn-outline-light animate__animated animate__fadeInUp"
+                id="copiador"
               >
                 <small>Contáctame!!!</small>
 
                 <i class="fa-solid fa-envelope"></i>
-              </a>
+              </a></abbr>
 
               <br />
               <br />
@@ -214,6 +215,8 @@
                     href="https://github.com/JafetVazquez"
                     ><i class="fab fa-github"></i
                   ></a>
+
+
                   <a
                     class="btn btn-dark m-3"
                     target="blank"
@@ -405,6 +408,15 @@
                     target="blank"
                     href="https://github.com/jafetvazquez/monorepo-Angular"
                     ><i class="fab fa-github"></i
+                  ></a>
+
+                  &nbsp;
+
+                  <a
+                    class="link-fancy link-fancy-light"
+                    target="blank"
+                    href="https://helpdesk-prueba.netlify.app/"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
                   ></a>
 
                   </div>
@@ -629,11 +641,11 @@
 
         &nbsp;
 
-        <div class="text-right small" id="copiador">
-          <abbr title="Copiar!!!">
+        <div class="text-right small">
           <a
           class="link-fancy link-fancy-light"
           target="_blank"
+          href="mailto:jetvax.jv@gmail.com"
           id="enlace"
           style="cursor: pointer;"
           >jetvax.jv@gmail.com</a
@@ -652,6 +664,17 @@
       });
     </script>
     <script>
+
+      function alertCopiar(){
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          text: 'Email copiado!',
+          showConfirmButton: false,
+          timer: 1500
+        })
+      }
+
       let scrollpos = window.scrollY;
       const header = document.querySelector(".navbar");
       const header_height = header.offsetHeight;
